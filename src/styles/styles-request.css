@@ -1,0 +1,195 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    /* background: goldenrod; */
+}
+.container-request {
+    
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    /* background: hotpink; */
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "mitad1 mitad2" 
+    
+    ;
+}
+
+.mitad1{
+    display: flex;
+    background: #ada9a9;
+    grid-area: mitad1;
+    width: 100%;
+    height: 100%;
+   justify-content: center;
+   align-items: center;
+   
+   
+}
+
+.mitad1 div{
+    display: flex;
+   margin: 0px auto;
+   background: rgba(56, 56, 56, 0.9);
+   margin-left: 70px;
+  
+}
+
+
+
+
+
+
+.mitad2{
+    
+    background: rgb(12, 12, 12);
+    grid-area: mitad2;
+    display: grid;
+    width: 100%;
+    height: 100%;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+.requestBox{
+    width: 550px;
+    height: 785px;
+    background: rgba(0, 0, 0, 0.600);
+    box-shadow: 0 3px 4px rgba(192, 191, 191, 0.19), 0 1px 3px rgba(207, 206, 206, 0.23), 0 1px 2px rgba(207, 206, 206, 0.23); 
+    border-radius: 4px;
+}
+
+
+
+/* /////////////////// */
+
+.requestBox .box p {
+    color: white;
+    margin-bottom: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    /* margin-bottom: -10px; */
+}
+
+.requestBox .box div {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    /* margin: 0.5em 0; */
+    margin-bottom: -10px;
+}
+
+.requestBox .box input{
+    
+    position: absolute;
+    width: 90%;
+    height: 87%;
+    background: rgb(19, 19, 19, 0.700);
+    color: white;
+    border: none;
+    outline: none;
+    padding-left: 0.8em;
+    border-radius: 10px;
+    transition: all .4s;
+    z-index: 1;
+    margin-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.requestBox h3 {
+    
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+ 
+}
+
+.requestBox .box div::before{
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-49%, -49%);
+    width: 92%;
+    height: 105%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #999697, #e2dad9);
+    z-index: 0;
+    margin-left: 10px;
+    
+}
+
+.requestBox .box input:focus::placeholder{
+    color: white;
+}
+
+.btn-sumit {
+    width: 110px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 200px;
+    /* line-height: 40px; */
+    justify-content: center;
+    align-items: center;
+
+
+   
+}
+
+
+
+.btn-request {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    transform: translate(-1%);
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to right, #999697, #e2dad9);
+    transition: all .4s;
+    position: absolute;
+    
+
+}
+
+.btn-home1 {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+   
+    transform: translate(-1%);
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to right, #999697, #e2dad9);
+    transition: all .4s;
+    
+    bottom: 720px;
+    margin-left: 20px;
+    position: absolute;
+    
+}
+
+
+
+.btn-home1 a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    line-height: 40px;
+}

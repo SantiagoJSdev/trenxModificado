@@ -1,0 +1,532 @@
+
+
+/* @font-face {
+    font-family: "lato";
+    src: url(../styles/font/Lato-Black.ttf);
+    src: url(../styles/font/Lato-Black.ttf?#eifix) format('embedded-opontype'),
+         url(../styles/font/Lato-Black.ttf) format('truetype');
+         
+         font-weight: normal;
+         font-style: normal;
+} */
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    
+    margin: 0px;
+    padding: 0px;
+  
+
+    width: 100%;
+   
+  
+    background: #000000 !important;
+    color: white;
+   
+    
+}
+.container-1 {
+
+    width: 100%;
+    height: 20vh;
+}
+
+.primero {
+   
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "nav"
+  
+    
+    ;
+}
+
+.nav-bar{
+
+   
+    height: 100px;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+  
+    line-height: 100px;
+    
+}
+.nav-bar .ul-1 {
+   
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+   
+    grid-column: 3/8;
+    
+}
+
+.nav-bar .ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 11/13;
+    
+}
+
+
+
+
+.logo {
+    grid-column: 1/3;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    /* justify-content: end; */
+    align-items: flex-start;
+    margin-top: -140px;
+    margin-left: -40px;
+
+}
+.parrafo{
+    grid-area: parrafo;
+    
+  
+    position: relative;
+/* border: 2px solid red; */
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(192, 191, 191, 0.19), 0 1px 5px rgba(207, 206, 206, 0.23), 0 1px 5px rgba(207, 206, 206, 0.23); 
+    overflow: hidden;
+    transform: translate(340px);
+}
+
+.parrafo p{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 15px;
+    
+    text-align:start;
+    /* letter-spacing: 1px; */
+    color: rgb(92, 92, 92);
+}
+
+.parrafo p span {
+    color: rgb(207, 198, 204);
+}
+
+
+/* efecto hover over link */
+
+
+  .nav-bar ul {
+    
+    list-style: none;
+    pointer-events: none;
+    user-select: none;
+} 
+
+
+.nav-bar ul li {
+   position: relative;
+   margin-left: 1rem; 
+   margin-right: 1rem;
+   pointer-events: all;
+ 
+   justify-self: center;
+}
+
+
+
+.nav-bar ul li a::before{
+    
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 4px;
+    background: rgb(3, 245, 44);
+    left: 50%;
+    bottom: 36px;
+    border-radius: 5px;
+}
+
+
+
+.nav-bar ul li:hover a::before  {
+    width: 100%;
+    left: 0;
+    transition: .2s all;
+}
+
+.nav-bar ul li a{
+text-decoration: none;
+transition: .2s;
+color: white;
+font-size: 20px;
+ }
+
+
+.nav-bar ul:hover li a{
+    color: rgb(126, 122, 122);
+
+}  
+.nav-bar ul:hover li a:hover{
+    color: white;
+}
+
+
+
+/* finnnnnnnnnnnnnnnnnnnnnnnnn */
+
+
+
+
+
+
+.caja-1 {
+    grid-area: caja-1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+}
+.caja {
+    
+ 
+    display: flex;
+    grid-column: 2/10;
+   border:1px solid hotpink;
+
+   margin-bottom: -40px;
+   align-items: center;
+   justify-content: center;
+ 
+   
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 30% repeat(5, 1fr) 30%;
+   
+}
+
+.footer ul{
+    display: grid;
+    grid-column: 2/7;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    align-self:flex-end;
+}
+
+.footer ul li{
+    cursor: pointer;
+}
+
+/* efecto hover footer */
+
+.footer ul {
+    
+    list-style: none;
+    pointer-events: none;
+    user-select: none;
+} 
+
+
+.footer ul li {
+   position: relative;
+   margin-left: 1rem; 
+   margin-right: 1rem;
+   pointer-events: all;
+
+   justify-self: center;
+}
+
+
+.footer ul li a::before{
+    
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 4px;
+    background: rgb(3, 245, 44);
+    left: 50%;
+    bottom: -4px;
+    border-radius: 5px;
+}
+
+
+
+.footer ul li:hover a::before  {
+    width: 100%;
+    left: 0;
+    transition: .2s all;
+}
+
+.footer ul li a{
+text-decoration: none;
+transition: .2s;
+color: white;
+font-size: 20px;
+ }
+
+.footer  ul:hover li a{
+    color: rgb(70, 73, 73);
+
+} 
+
+.footer ul:hover li a:hover{
+    color: white;
+
+} 
+
+/* caja con gradiente */
+
+.pra {
+
+    background-color: rgba(0, 0, 0, 0.1);
+ 
+  
+}
+
+.div {
+    margin-top: 30px;
+   
+    border: solid 1px transparent;
+   
+    background-image: linear-gradient(black, black), 
+                      linear-gradient(to right, rgb(9, 243, 48), rgb(151, 0, 63));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* fin caja con gradiente */
+.btn-4 a{
+    text-decoration: none;
+    color: white;
+}
+
+.container-2 {
+
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 15% 15%;
+    grid-template-areas: 
+    "flecha parrafo"
+    "caja-1 caja-1"
+    "footer footer";
+}
+
+/* boton drowdowun */
+
+.dropdown {
+   
+    position: relative;
+    display: inline-block;
+    margin: auto;
+   
+    transition:  1s all;
+}
+
+.dropdown-btn {
+    width: 200px;
+     
+      color: rgb(247, 248, 248);
+      font-size: 16px;
+     
+      border-radius: 10px;
+      cursor: pointer;
+      border: solid 0px transparent;
+      background-image: linear-gradient(black, black), 
+      linear-gradient(to right, rgb(9, 243, 48), rgb(151, 0, 63));
+background-origin: border-box;
+background-clip: content-box, border-box;
+transition:  1s all;
+  
+      
+  }
+  
+  #p-3{
+      
+      font-weight: 900;
+  
+  }
+  
+.dropdown-content {
+  
+    display: none;
+   
+   
+    position:absolute;
+    margin-top: 55px;
+    background-color: #f9f9f9;
+  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    width: 200px;
+    text-align:start;
+ 
+    transition: 1s all;
+   
+    /* margin: 0px auto; */
+    
+}
+.dropdown-content a{
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    background-color: rgba(32, 32, 32, 0.2);
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    /* border: solid 1px blue; */
+    transition: 1s all;
+    height: 50px !important;
+    line-height: 50px;
+    padding-left: 10px;
+    margin-bottom: 2px;
+
+    
+}
+
+.dropdown-content a:hover {
+
+    background-color: #141414;
+
+
+}
+.dropdown:hover .dropdown-btn {
+background: #141414;
+}
+
+.dropdown:hover .dropdown-content {
+   
+    display: block;
+   
+}
+
+.flecha {
+    background: transparent;
+    grid-area: flecha;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 20% 40%;
+    grid-template-areas: 
+    "flecha1"
+    "flecha2"
+    "flecha3"
+    ;
+}
+
+  .flecha1{
+    grid-area: flecha1;
+    background: transparent;
+     display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:  
+    ". flecha1-logo ."; 
+} 
+
+.flecha2{
+    grid-area: flecha2;
+    /* background: rgb(235, 219, 6); */
+    margin-left: 30px;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+
+.flecha3{
+    grid-area: flecha3;
+    /* background: maroon; */
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:  
+    ". flecha3-btn .";
+}  
+
+.flecha3-btn {
+   
+    width: 240px;
+    height: 50px;
+    display: flex;
+    grid-area: flecha3-btn;
+    
+    background: transparent;
+    border:1px solid white;
+    border-radius: 10px;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: all 4ms;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.flecha3-btn a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+}
+
+.flecha3-btn:hover {
+border: 1px solid rgb(0, 255, 0);
+color: rgb(187, 190, 187);
+}
+
+.flecha1-logo {
+    grid-area: flecha1-logo;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0px auto;
+    /* transform: rotate(50deg); */
+
+
+}
+
+.triangulo {
+    width: 50px; 
+    height: 0px; 
+    border-left: 200px solid rgb(0, 255, 0);
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent; 
+    transform: rotate(90deg);
+    /* opacity: 0.7; */
+
+}
+.off {
+    position: absolute;
+    font-size: 40px;
+    margin-top: -45px;
+    /* transform: rotate(70deg); */
+    
+}
+
+
+/* cuadro sumit */
+
+.box-principal {
+    display: flex;
+}
+
+
+.parrafo img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    /* opacity: 90%; */
+   
+}

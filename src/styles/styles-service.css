@@ -1,0 +1,98 @@
+
+.containerService {
+
+    width: 90%;
+    height: 600px;
+    background: blue;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(192, 191, 191, 0.19), 0 1px 5px rgba(207, 206, 206, 0.23), 0 1px 5px rgba(207, 206, 206, 0.23); 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "primeraCaja segundaCaja terceraCaja cuartaCaja quintaCaja"
+    ;
+
+}
+
+.primeraCaja{
+    display: block;
+    border-right: 1px solid  rgba(192, 191, 191, 0.19);
+    height: 80%;
+    margin-top: 60px;
+   
+}
+
+.segundaCaja{
+    display: block;
+    border-right: 1px solid  rgba(192, 191, 191, 0.19);
+    height: 80%;
+    margin-top: 60px;
+   
+}
+
+.terceraCaja{
+    display: block;
+    border-right: 1px solid  rgba(192, 191, 191, 0.19);
+    height: 80%;
+    margin-top: 60px;
+   
+}
+.cuartaCaja{
+    display: block;
+    border-right: 1px solid  rgba(192, 191, 191, 0.19);
+    height: 80%;
+    margin-top: 60px;
+   
+}
+
+.quintaCaja{
+    display: block;
+    /* border-right: 1px solid  rgba(192, 191, 191, 0.19); */
+    height: 80%;
+    margin-top: 60px;
+   
+}
+
+.primeraCaja h3{
+    text-align: center;
+}
+
+.primeraCaja ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.segundaCaja h3{
+    text-align: center;
+}
+.segundaCaja ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.terceraCaja h3{
+    text-align: center;
+}
+.terceraCaja ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.cuartaCaja h3{
+    text-align: center;
+}
+.cuartaCaja ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.quintaCaja h3{
+    text-align: center;
+}
+.quintaCaja ul li {
+    list-style: none;
+    padding: 10px;
+}
