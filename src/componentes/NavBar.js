@@ -21,7 +21,7 @@ export const NavBar = () => {
         <>
              <nav className="nav-bar">
                     <div className="logo">
-                        <img className="img" src={"./img/logo.png"} alt="img" />
+                        <img className="img" src={'https://user-images.githubusercontent.com/87577172/153779231-38958520-0d51-4d0d-8973-56c5ca47f2a8.png'} alt="img" />
                     </div>
                     <ul className="ul-1">
                         <li> <a href="/service"> SERVICE  </a> </li>
