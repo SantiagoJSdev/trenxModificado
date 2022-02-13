@@ -8,7 +8,7 @@ import { finishLoading } from '../action/uiLoading';
 
 export const NavBar = () => {
     const dispatch = useDispatch();
-    const {uid} = useSelector( state => state.auth );
+    const {uid, name} = useSelector( state => state.auth );
     console.log(uid)
 
     const handleLogout=()=>{
@@ -28,7 +28,12 @@ export const NavBar = () => {
                         <li> <a href="/auth/products"> PRODUCTS </a> </li>
                         <li> <a href="/contact"> CONTACT </a> </li>
                         <li> <a href="/auth/career" > CAREER </a> </li>
-                       {  (uid) && <li> <a onClick={handleLogout} href="/auth/otros">LOGOUT </a> </li> }
+                       {  (uid) &&
+                     
+                        <li> <a onClick={handleLogout} href="/auth/otros">LOGOUT </a> </li> 
+                        
+                  
+                        }
                     </ul>
                     <div className="dropdown ul">
                       { (!uid) &&  <button className="dropdown-btn"><p id="p-3">ACCOUNT</p></button> }
@@ -36,7 +41,9 @@ export const NavBar = () => {
                             <a href="/auth/login">SING IN</a>
                             <a href="/auth/register">CREATE ACCOUNT</a>
                         </div>
+                        
                     </div>
+                    <div className='nameUid'>{name}</div>
                 </nav>
         </>
     )

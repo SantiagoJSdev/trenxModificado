@@ -72,20 +72,28 @@ body {
     grid-column: 11/13;
     
 }
+.nav-bar .ul-1 {
+    width: 100%;
+    height: 80px;
+   /* border: 2px solid red; */
+}
 
 
 
 
 .logo {
+    width: 250px;
+    height: 250px;
     grid-column: 1/3;
     overflow: hidden;
-    position: absolute;
     display: flex;
-    /* justify-content: end; */
-    align-items: flex-start;
-    margin-top: -140px;
-    margin-left: -40px;
-
+    /* border: 2px solid red; */
+    transform: translate(0px, -55px);
+}
+.logo > img{
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .parrafo{
     grid-area: parrafo;
@@ -99,7 +107,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 3px 10px rgba(192, 191, 191, 0.19), 0 1px 5px rgba(207, 206, 206, 0.23), 0 1px 5px rgba(207, 206, 206, 0.23); 
     overflow: hidden;
-    transform: translate(340px);
+    transform: translate(340px, 50px);
 }
 
 .parrafo p{
@@ -121,7 +129,8 @@ body {
 
 
   .nav-bar ul {
-    
+    width: 400px;
+    height: 400px;
     list-style: none;
     pointer-events: none;
     user-select: none;
@@ -133,8 +142,8 @@ body {
    margin-left: 1rem; 
    margin-right: 1rem;
    pointer-events: all;
- 
    justify-self: center;
+   transition: .1s all;
 }
 
 
@@ -149,6 +158,7 @@ body {
     left: 50%;
     bottom: 36px;
     border-radius: 5px;
+    transition: .7s all;
 }
 
 
@@ -156,23 +166,25 @@ body {
 .nav-bar ul li:hover a::before  {
     width: 100%;
     left: 0;
-    transition: .2s all;
+    transition: .7s all;
 }
 
 .nav-bar ul li a{
 text-decoration: none;
-transition: .2s;
 color: white;
 font-size: 20px;
+transition: .1s all;
  }
 
 
-.nav-bar ul:hover li a{
+.nav-bar ul li:hover a{
     color: rgb(126, 122, 122);
+    transition: .1s all;
 
 }  
-.nav-bar ul:hover li a:hover{
-    color: white;
+.nav-bar ul li:hover a{
+    color: rgb(126, 122, 122);
+    transition: .1s all;
 }
 
 
@@ -253,6 +265,7 @@ font-size: 20px;
     left: 50%;
     bottom: -4px;
     border-radius: 5px;
+    transition: .7s all;
 }
 
 
@@ -260,7 +273,7 @@ font-size: 20px;
 .footer ul li:hover a::before  {
     width: 100%;
     left: 0;
-    transition: .2s all;
+    transition: .7s all;
 }
 
 .footer ul li a{
@@ -324,56 +337,40 @@ font-size: 20px;
 /* boton drowdowun */
 
 .dropdown {
-   
+    transform: translate(0px, -50px);
     position: relative;
     display: inline-block;
     margin: auto;
-   
-    transition:  1s all;
+    transition:  0.5s all;
 }
 
 .dropdown-btn {
-    width: 200px;
-     
-      color: rgb(247, 248, 248);
-      font-size: 16px;
-     
-      border-radius: 10px;
-      cursor: pointer;
-      border: solid 0px transparent;
-      background-image: linear-gradient(black, black), 
-      linear-gradient(to right, rgb(9, 243, 48), rgb(151, 0, 63));
+width: 200px;
+color: rgb(247, 248, 248);
+font-size: 16px;
+border-radius: 10px;
+cursor: pointer;
+border: solid 0px transparent;
+background-image: linear-gradient(black, black), 
+linear-gradient(to right, rgb(9, 243, 48), rgb(151, 0, 63));
 background-origin: border-box;
 background-clip: content-box, border-box;
-transition:  1s all;
-  
-      
-  }
-  
-  #p-3{
-      
-      font-weight: 900;
+transition:  0.5s all;
+font-weight: 900;
   
   }
   
 .dropdown-content {
   
-    display: none;
-   
-   
+    visibility:hidden;
     position:absolute;
-    margin-top: 55px;
+    margin-top: 45px;
     background-color: #f9f9f9;
-  
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     background-color: transparent;
     width: 200px;
     text-align:start;
- 
-    transition: 1s all;
-   
-    /* margin: 0px auto; */
-    
+    transition: 0.2s all; 
 }
 .dropdown-content a{
 
@@ -384,30 +381,30 @@ transition:  1s all;
     color: white;
     font-size: 16px;
     border-radius: 10px;
-    /* border: solid 1px blue; */
-    transition: 1s all;
-    height: 50px !important;
     line-height: 50px;
     padding-left: 10px;
     margin-bottom: 2px;
-
+    transition: 0.5s all; 
     
 }
 
 .dropdown-content a:hover {
 
     background-color: #141414;
-
+    transition: 0.5s all; 
 
 }
 .dropdown:hover .dropdown-btn {
 background: #141414;
+transition: 0.5s all; 
+
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
    
-    display: block;
-   
+    visibility:visible;
+    transition: 2s all; 
+    margin-top: 55px;
 }
 
 .flecha {
@@ -529,4 +526,10 @@ color: rgb(187, 190, 187);
     height: 100%;
     /* opacity: 90%; */
    
+}
+.nameUid{
+    position: absolute;
+    right: 100px;
+    font-size: 20px;
+  
 }
